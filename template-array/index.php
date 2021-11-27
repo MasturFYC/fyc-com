@@ -8,9 +8,6 @@
 	<h1>Template array</h1>
 	<p>Esto está fuera de template</p>
 
-  <div id="div-array"></div>
-
-  <div>welcome to the jungle</div>
 	<template id="templatesimple">
 		<style>
 		h1{
@@ -37,8 +34,7 @@ ciudades.forEach(function(ciudad){
 	template.appendChild(newP);
 });
 var clone = document.importNode(template, true);
-let divArray = document.getElementById('div-array');
-divArray.appendChild(clone);
+document.body.appendChild(clone);
 </script>
 </body>
 </html>
